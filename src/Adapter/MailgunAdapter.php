@@ -123,8 +123,6 @@ class MailgunAdapter implements ServiceAdapter
         // @todo Handle attachment ('attachment')
         // @todo Handle inline ('o:inline')
 
-        var_dump($message);
-
         return $message;
     }
 

@@ -17,6 +17,8 @@ interface ServiceAdapter
      * Sends email
      *
      * @param Email $email
+     *
+     * @return void
      */
     public function send(Email $email);
 }
