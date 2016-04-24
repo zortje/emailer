@@ -1,0 +1,16 @@
+language: php
+
+notifications:
+  email: false
+
+php:
+  - 7.0
+
+install: composer install -o
+
+after_script:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
