@@ -11,7 +11,7 @@ use Zortje\Emailer\Email;
  *
  * @package Zortje\Emailer\Adapter
  */
-class MailgunAdapter implements ServiceAdapter
+class MailgunAdapter implements ServiceAdapterInterface
 {
 
     /**

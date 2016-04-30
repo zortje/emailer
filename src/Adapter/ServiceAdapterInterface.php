@@ -6,11 +6,11 @@ namespace Zortje\Emailer\Adapter;
 use Zortje\Emailer\Email;
 
 /**
- * Class ServiceAdapter
+ * Class ServiceAdapterInterface
  *
  * @package Zortje\Emailer\Adapter
  */
-interface ServiceAdapter
+interface ServiceAdapterInterface
 {
 
     /**

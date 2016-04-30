@@ -3,7 +3,7 @@ declare(strict_types = 1);
 
 namespace Zortje\Emailer;
 
-use Zortje\Emailer\Adapter\ServiceAdapter;
+use Zortje\Emailer\Adapter\ServiceAdapterInterface;
 
 /**
  * Class Mailer
@@ -14,16 +14,16 @@ class Mailer
 {
 
     /**
-     * @var ServiceAdapter
+     * @var ServiceAdapterInterface
      */
     protected $serviceAdapter;
 
     /**
      * Mailer constructor.
      *
-     * @param ServiceAdapter $serviceAdapter
+     * @param ServiceAdapterInterface $serviceAdapter
      */
-    public function __construct(ServiceAdapter $serviceAdapter)
+    public function __construct(ServiceAdapterInterface $serviceAdapter)
     {
         $this->serviceAdapter = $serviceAdapter;
     }
